@@ -63,32 +63,32 @@ public class ResultActivity extends AppCompatActivity {
         else if (intbmi<16.9 && intbmi > 16)
         {
             bmiCategory.setText("Moderate Thinness");
-            background.setBackgroundColor(Color.RED);
+            background.setBackgroundColor(Color.YELLOW);
             imageView.setImageResource(R.drawable.ic_warning);
         }
         else if (intbmi<18.4 && intbmi > 17)
         {
             bmiCategory.setText("Mild Thinness");
-            background.setBackgroundColor(Color.RED);
+            background.setBackgroundColor(Color.YELLOW);
             imageView.setImageResource(R.drawable.ic_warning);
         }
         else if (intbmi<25 && intbmi > 18.4)
         {
             bmiCategory.setText("Normal");
-            background.setBackgroundColor(Color.YELLOW);
+            background.setBackgroundColor(Color.GREEN);
             imageView.setImageResource(R.drawable.ic_ok);
         }
         else if (intbmi<29.4 && intbmi > 25)
         {
             bmiCategory.setText("OverWeight");
-            background.setBackgroundColor(Color.RED);
+            background.setBackgroundColor(Color.YELLOW);
             imageView.setImageResource(R.drawable.ic_warning);
         }
         else
         {
             bmiCategory.setText("Obese Class I");
             background.setBackgroundColor(Color.RED);
-            imageView.setImageResource(R.drawable.ic_warning);
+            imageView.setImageResource(R.drawable.ic_crosss);
         }
 
         gender.setText(intent.getStringExtra("gender"));
